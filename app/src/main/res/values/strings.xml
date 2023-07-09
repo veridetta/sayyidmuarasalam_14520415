@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">sayyidmuarasalam_14520415</string>
+    <string-array name="jenis_kelamin_array">
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+</resources>
