@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private DataAdapter dataAdapter;
     private List<DataItem> dataList;
     private RecyclerView recyclerView;
-    private Button addDataButton;
+    private Button addDataButton, wvButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +37,20 @@ public class MainActivity extends AppCompatActivity {
 
         // Inisialisasi Tombol Tambah Data
         addDataButton = findViewById(R.id.addDataButton);
+        wvButton = findViewById(R.id.wvButton);
         addDataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Buka CreateActivity untuk menambah data baru
                 Intent intent = new Intent(MainActivity.this, CreateActivity.class);
+                startActivity(intent);
+            }
+        });
+        wvButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Buka WebviewActivity
+                Intent intent = new Intent(MainActivity.this, WebAcivity.class);
                 startActivity(intent);
             }
         });

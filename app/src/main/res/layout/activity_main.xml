@@ -11,14 +11,49 @@
         android:orientation="vertical"
         android:padding="@dimen/_12sdp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <!-- Button Tambah Data -->
-        <Button
-            android:id="@+id/addDataButton"
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp" />
+        <!-- Nama Aplikasi TextView -->
+        <TextView
+            android:id="@+id/appNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tambah Data"
-            android:layout_gravity="end"
-            android:layout_marginTop="16dp" />
+            android:text="sayyidmuarasalam_14520415"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_12sdp">
+            <!-- Button Tambah Data -->
+            <Button
+                android:id="@+id/addDataButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Data"
+
+                android:layout_marginTop="16dp" />
+            <!-- Button Tambah Data -->
+            <Button
+                android:id="@+id/wvButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Webview"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
 
         <!-- RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
