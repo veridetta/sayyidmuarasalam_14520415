@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="center"
         android:gravity="center">
+
         <!-- Logo ImageView -->
         <ImageView
             android:id="@+id/logoImageView"
@@ -18,6 +20,7 @@
             android:src="@drawable/logo"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/_16sdp" />
+
         <!-- Nama Aplikasi TextView -->
         <TextView
             android:id="@+id/appNameTextView"
@@ -28,7 +31,58 @@
             android:textSize="24sp"
             android:layout_gravity="center"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:gravity="start">
+
+        <!-- Checkbox Persetujuan Pengguna -->
+        <CheckBox
+            android:id="@+id/checkboxPersetujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya menyetujui penggunaan aplikasi"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/_16sdp" />
+
+        <!-- Radio Group Konfirmasi Buka Aplikasi -->
+        <RadioGroup
+            android:id="@+id/radioGroupKonfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_16sdp">
+
+            <RadioButton
+                android:id="@+id/radioButtonYa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak"
+                android:textColor="@android:color/black" />
+        </RadioGroup>
+
     </LinearLayout>
 
+        <!-- Tombol Buka Aplikasi -->
+        <Button
+            android:id="@+id/bukaAplikasiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buka Aplikasi"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
